@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD6C61442F6A2C2A008A5607 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BD6C61432F6A2C2A008A5607 /* Localizable.xcstrings */; };
+		BD8BF78F2F63A68100A3BCF7 /* ToDoTracker-InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BD8BF78E2F63A68100A3BCF7 /* ToDoTracker-InfoPlist.xcstrings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BD8BF7002F57D19A00A3BCF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD6C61432F6A2C2A008A5607 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		BD8BF6F02F57D19900A3BCF7 /* ToDoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8BF6FF2F57D19A00A3BCF7 /* ToDoTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8BF7092F57D19A00A3BCF7 /* ToDoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8BF78E2F63A68100A3BCF7 /* ToDoTracker-InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "ToDoTracker-InfoPlist.xcstrings"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		BD8BF6E72F57D19900A3BCF7 = {
 			isa = PBXGroup;
 			children = (
+				BD6C61432F6A2C2A008A5607 /* Localizable.xcstrings */,
+				BD8BF78E2F63A68100A3BCF7 /* ToDoTracker-InfoPlist.xcstrings */,
 				BD8BF6F22F57D19900A3BCF7 /* ToDoTracker */,
 				BD8BF7022F57D19A00A3BCF7 /* ToDoTrackerTests */,
 				BD8BF70C2F57D19A00A3BCF7 /* ToDoTrackerUITests */,
@@ -192,6 +201,10 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
+				he,
+				ja,
+				ko,
 			);
 			mainGroup = BD8BF6E72F57D19900A3BCF7;
 			minimizedProjectReferenceProxies = 1;
@@ -212,6 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8BF78F2F63A68100A3BCF7 /* ToDoTracker-InfoPlist.xcstrings in Resources */,
+				BD6C61442F6A2C2A008A5607 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +343,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +400,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
